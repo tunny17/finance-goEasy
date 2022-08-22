@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+body {
+    margin: 0px;
+    background-color: #F2F3F8;
+    font-family: 'Roboto', sans-serif;;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* navigation */
+
+
+.navigation-1 {
+    display: flex;
+    background-color: rgb(40,231,116);
+}
+
+.navigation-1 nav {
+    margin-right: 30px;
+    margin-bottom: 0px;
+}
+
+.navigation-1 nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+.navigation-1 nav ul li:nth-child(1) {
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 27px;
+    font-weight: 700;
+    color: white;
+}
+
+.navigation-1 nav ul li img {
+    width: 20px;
+    display: none;
+}
+
+
+.navigation-1 nav ul li:nth-child(2) {
+    margin-left: 1070px;
+    padding: 5px 0px 5px 10px;
+    margin-top: 2px;
+}
+
+.navigation-1 nav ul li input {
+    margin-top: 2px;
+    padding: 7px 70px 7px 10px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: rgb(40,231,116);
+    color: white;
+}
+
+.navigation-1 nav ul li input::placeholder {
+    color: white;
+    font-size: 13px;
+}
+
+.navigation-1 nav ul li input:focus {
+    outline: none;
+}
+
+.navigation-1 div {
+    margin-top: 7px;
+}
+
+.notification-svg {
+    width: 25px;
+    margin-right: 13px;
+}
+.profile-svg {
+    width: 30px;
+    border-radius: 20px;
+}
+
+
+
+
+/* the second navigation (the one by the left) */
+
+.navigation-2 {
+    position: absolute;
+    padding-bottom: 890px;
+    padding-right: 140px;
+    background-color: black;
+    color: white;
+}
+
+/* moving the rest of the body to the side */
+.hero,
+.section-2,
+.section-3,
+.footer 
+{
+    margin-left: 260px;
+}
+
+.navigation-2 nav ul {
+    list-style: none;
+    margin-top: 0px;
+    padding-left: 0px;
+}
+
+.navigation-2 nav {
+    margin-top: 40px;
+}
+
+.navigation-2 nav ul li p {
+    margin-top: 0px;
+    font-size: 13px;
+}
+
+.navigation-2 nav ul li div {
+    display: flex;
+}
+
+.navigation-2 nav ul li {
+    display: flex;
+}
+
+.navigation-2 nav ul li img {
+    width: 20px;
+}
+
+
+
+/* the hero section */
+
+.hero h4 {
+    font-size: 13px;
+    font-weight: 100;
+    margin: 25px 0px 7px 13px;
+}
+
+.hero div ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero div ul li {
+    display: flex;
+    padding: 20px;
+    padding-right: 80px;
+    background-color: white;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.hero div ul li h5 {
+    margin: 5px;
+    font-size: 18px;
+}
+
+.hero div ul li h6 {
+    margin: 5px;
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.hero div ul li img {
+    width: 55px;
+    margin-right: 10px;
+}
+
+
+
+/* section-2 */
+
+.section-2 {
+    margin-top: 10px;
+    display: flex;
+}
+
+.section-2 .div-1 {
+    margin-left: 13px;
+    height: 230px;
+    padding: 0px 1px 0px 0px;
+    background-color: rgb(78,237,111);
+    box-shadow: 1px 1px 5px grey;
+}
+
+.section-2 .div-1 .div-1a {
+    margin-left: 25px;
+}
+
+.section-2 .div-1 div div {
+    display: flex;
+    margin-right: 20px;
+}
+
+.section-2 .div-1 div div h5:nth-child(1) {
+    margin-right: 190px;
+}
+
+.section-2 .div-1 div div h5 {
+    font-size: 18px;
+}
+
+.section-2 .div-1 h2 {
+    font-size: 60px;
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+.section-2 .div-1 h4 {
+    margin-top: 30px;
+    font-weight: 100;
+    padding: 20px;
+    text-align: center;
+    margin-left: 0px;
+    background-color: white;
+    margin-bottom: 0px;
+    box-shadow: 1px 1px 5px grey;
+}
+
+/* trips and performance */
+
+.div-2 {
+    padding-left: 10px;
+    padding-right: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.div-2 table, .div-2 th, .div-2 td {
+    border: 1px hidden black;
+    border-collapse: collapse;
+}
+.div-2 th, .div-2 td {
+    padding: 10px;
+    padding-right: 90px;
+}
+.div-2 div h2 {
+    font-size: 20px;
+}
+
+/* input calendar */
+
+.div-3 {
+    width: 300px;
+}
+
+.div-3 input {
+    padding: 15px;
+    border: hidden;
+    margin-left: 20px;
+    box-shadow: 1px 1px 5px grey;
+}
+
+
+/* section-3 */
+
+.section-3 {
+    display: flex;
+}
+
+.section-3 .recent-div {
+    padding: 20px;
+    background-color: white;
+    margin-top: 10px;
+    margin-right: 80px;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.section-3 div table, 
+.section-3 div th, 
+.section-3 div td 
+{
+    border: 1px hidden black;
+    border-collapse: collapse;
+}
+
+.section-3 div table .tr-2 {
+    background-color: #F2F3F8;
+}
+.section-3 div th, 
+.section-3 div td 
+{
+    padding: 10px;
+    padding-right: 50px;
+}
+
+.section-3 .recent-div {
+    height: 250px;
+}
+
+
+.section-3 .div-3b h4 {
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    padding: 5px;
+    background-color: #F2F3F8;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.section-3 .div-3b textarea {
+    border: hidden;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.section-3 .div-3b textarea:focus {
+    outline: none;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 10px;
+    padding: 13px 5px 13px 5px;
+    background-color: white;
+    margin-right: 20px;
+}
+
+.body {
+    margin-top: 20px;
+}
+
+
+
+
+/* media queries */
+
+@media (max-width: 376px) {
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .navigation-1 {
+        flex-direction: column;
+    }
+
+    .navigation-1 nav ul {
+        flex-direction: column;
+    }
+
+    .navigation-1 nav ul li:nth-child(2) {
+        margin: 0px;
+    }
+
+    .navigation-1 nav ul li:nth-child(1) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navigation-1 nav ul li img {
+        width: 20px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .navigation-1 nav ul li input {
+        padding-right: 160px;
+        margin-left: 10px;
+        margin-bottom: 3px;
+    }
+
+    .navigation-1 div {
+        display: none;
+    }
+
+    .navigation-2 {
+        display: none;
+    }
+
+    .hero,
+    .section-2,
+    .section-3,
+    .footer 
+    {
+        margin: 0px;
+    }
+
+    .hero div ul {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .hero div ul li img {
+        margin-right: 30px;
+    }
+
+    .section-2  {
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .section-2 div {
+        margin: 10px;
+    }
+
+    .section-2 .div-1 .div-1a {
+        margin-left: 0px;
+    }
+    
+    .section-2 .div-1 div div {
+        margin-right: 5px;
+    }
+    
+    .section-2 .div-1 div div h5:nth-child(1) {
+        margin-right: 170px;
+        margin-left: 5px;
+    }
+    
+    .section-2 .div-1 div div h5 {
+        font-size: 14px;
+    }
+
+    .section-2 .div-1 h2 {
+        font-size: 50px;
+        margin-top: 0px;
+    }
+
+    /* div2 */
+
+    .div-2 div h2 {
+        font-size: 17px;
+    }
+
+    .div-2 th, .div-2 td {
+        font-size: 12px;
+        padding-right: 0px;
+    }
+
+    .div-2 th, .div-2 .td-1 {
+        padding-right: 170px;
+    }
+
+    .div-2 table, .div-2 th, .div-2 td {
+        padding-bottom: 10px;
+        border-collapse: collapse;
+        border-bottom: 1px solid grey;
+        border-top: 1px solid grey;
+    }
+
+    #tr1 {
+        border-top: hidden;
+    }
+
+    /* input */
+
+    .div-3 input {
+        margin-left: 100px;
+    }
+
+    /* section-3 */
+
+    .section-3 {
+        flex-direction: column;
+    }
+
+    .section-3 .recent-div {
+        margin: 0px;
+        padding: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+
+    .section-3 .recent-div h2 {
+        padding: 5px;
+        margin-left: 5px;
+    }
+
+    .section-3 div table, 
+    .section-3 div th, 
+    .section-3 div td 
+    {
+        border: 1px hidden black;
+        border-collapse: collapse;
+        font-size: 13px;
+        padding-right: 10px;
+        color: grey;
+    }
+
+    .section-3 .recent-div table tr:nth-child(1) {
+        font-weight: 900;
+    }
+
+
+    /* trip locations */
+
+    .div-3b {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .div-3b textarea {
+        width: 352px;
+    }
+
+    /* footer */
+
+    .footer {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
