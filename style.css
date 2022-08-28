@@ -92,7 +92,7 @@ body::-webkit-scrollbar {
 .navigation-2 {
     position: absolute;
     padding-bottom: 890px;
-    padding-right: 140px;
+    padding-right: 10px;
     background-color: black;
     color: white;
 }
@@ -119,7 +119,26 @@ body::-webkit-scrollbar {
 .navigation-2 nav ul li p {
     margin-top: 0px;
     font-size: 13px;
+    margin-left: 10px;
 }
+
+.navigation-2 nav ul li {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#one {
+    margin-left: 172px;
+}
+
+#two {
+    margin-left: 142px;
+}
+
+#three {
+    margin-left: 130px;
+}
+
 
 .navigation-2 nav ul li div {
     display: flex;
@@ -154,9 +173,13 @@ body::-webkit-scrollbar {
 .hero div ul li {
     display: flex;
     padding: 20px;
-    padding-right: 80px;
+    padding-right: 60px;
     background-color: white;
     box-shadow: 1px 1px 5px grey;
+}
+
+.hero div ul li div {
+    margin-left: 14px;
 }
 
 .hero div ul li h5 {
@@ -170,10 +193,19 @@ body::-webkit-scrollbar {
     font-weight: 100;
 }
 
-.hero div ul li img {
-    width: 55px;
-    margin-right: 10px;
+.hero div ul li i {
+    padding: 20px;
+    background-color: black;
+    border-radius: 100%;
+    color: white;
 }
+
+#dollar {
+    padding: 20px 25px 20px 25px;
+}
+
+
+  
 
 
 
