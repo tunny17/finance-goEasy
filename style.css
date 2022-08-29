@@ -82,7 +82,7 @@ body::-webkit-scrollbar {
 
 /* styling of the upper right side's container (the profile and the notification svg) */
 .navigation-1 div {
-    margin-top: 13px;
+    margin-top: 10px;
     margin-right: 5px;
 }
 
