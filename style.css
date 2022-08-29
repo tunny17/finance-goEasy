@@ -1,28 +1,33 @@
+/********************************** font family used **********************************/
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
 
+/********************************** display of the body **********************************/
 body {
     margin: 0px;
     background-color: #F2F3F8;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
 }
 
 body::-webkit-scrollbar {
     display: none;
 }
 
-/* navigation */
 
 
+/********************************** first navigation **********************************/
+/* styling of the container */
 .navigation-1 {
     display: flex;
     background-color: rgb(6,217,150);
 }
 
+/* body of the navbar */
 .navigation-1 nav {
     margin-right: 30px;
     margin-bottom: 0px;
 }
 
+/* arrangement of "easygo" and the searchbar */
 .navigation-1 nav ul {
     display: flex;
     justify-content: space-around;
@@ -32,6 +37,7 @@ body::-webkit-scrollbar {
     margin-bottom: 7px;
 }
 
+/* styling of the first li (easyGo) */
 .navigation-1 nav ul li:nth-child(1) {
     margin-left: 10px;
     margin-top: 5px;
@@ -40,18 +46,20 @@ body::-webkit-scrollbar {
     color: white;
 }
 
+/* setting the hamburger menu display to none */
 .navigation-1 nav ul li img {
     width: 20px;
     display: none;
 }
 
-
+/* styling of the searchbar container */
 .navigation-1 nav ul li:nth-child(2) {
     margin-left: 1060px;
     padding: 5px 0px 5px 10px;
     margin-top: 2px;
 }
 
+/* styling of the searchbar */
 .navigation-1 nav ul li input {
     margin-top: 2px;
     padding: 7px 70px 7px 10px;
@@ -61,24 +69,30 @@ body::-webkit-scrollbar {
     color: white;
 }
 
+/* styling of the searchbar's placeholder */
 .navigation-1 nav ul li input::placeholder {
     color: white;
     font-size: 13px;
 }
 
+/* searchbar focus attribute */
 .navigation-1 nav ul li input:focus {
     outline: none;
 }
 
+/* styling of the upper right side's container (the profile and the notification svg) */
 .navigation-1 div {
-    margin-top: 7px;
+    margin-top: 13px;
     margin-right: 5px;
 }
 
+/* styling of the notification svg */
 .notification-svg {
     width: 25px;
     margin-right: 13px;
 }
+
+/* the profile svg */
 .profile-svg {
     width: 30px;
     border-radius: 20px;
@@ -87,17 +101,18 @@ body::-webkit-scrollbar {
 
 
 
-/* the second navigation (the one by the left) */
+/*************************** second navigation (left navigation) ***************************/
 
+/* setting the container of the navbar to the left */
 .navigation-2 {
     position: absolute;
-    padding-bottom: 890px;
+    padding-bottom: 900px;
     padding-right: 10px;
     background-color: black;
     color: white;
 }
 
-/* moving the rest of the body to the side */
+/* setting the rest of the body's container to the right */
 .hero,
 .section-2,
 .section-3,
@@ -106,27 +121,42 @@ body::-webkit-scrollbar {
     margin-left: 260px;
 }
 
+/* setting the nav's container */
+.navigation-2 nav {
+    margin-top: 40px;
+}
+
+/* styling the nav's ul */
 .navigation-2 nav ul {
     list-style: none;
     margin-top: 0px;
     padding-left: 0px;
 }
 
-.navigation-2 nav {
-    margin-top: 40px;
+/* styling each li */
+.navigation-2 nav ul li {
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
+/* styling the p tags/the texts of each li */
 .navigation-2 nav ul li p {
     margin-top: 0px;
     font-size: 13px;
     margin-left: 10px;
 }
 
-.navigation-2 nav ul li {
-    margin-top: 10px;
-    margin-left: 10px;
+/* the container of the icon and p tags */
+.navigation-2 nav ul li div {
+    display: flex;
 }
 
+/* the container of the div and the arrow svg */
+.navigation-2 nav ul li {
+    display: flex;
+}
+
+/* styling the less down arrow svg (using id to avoid conflicts while styling other icons */
 #one {
     margin-left: 172px;
 }
@@ -140,28 +170,23 @@ body::-webkit-scrollbar {
 }
 
 
-.navigation-2 nav ul li div {
-    display: flex;
+
+
+/*************************** the hero section ***************************/
+
+/* the container of the rest of the body */
+.body {
+    margin-top: 20px;
 }
 
-.navigation-2 nav ul li {
-    display: flex;
-}
-
-.navigation-2 nav ul li img {
-    width: 20px;
-}
-
-
-
-/* the hero section */
-
+/* styling the heading of the hero section */
 .hero h4 {
     font-size: 13px;
     font-weight: 100;
     margin: 25px 0px 7px 13px;
 }
 
+/* the container for the li tags */
 .hero div ul {
     padding: 0px;
     margin: 0px;
@@ -170,6 +195,7 @@ body::-webkit-scrollbar {
     justify-content: space-around;
 }
 
+/* styling the container of the icons and the div ("the side comments") */
 .hero div ul li {
     display: flex;
     padding: 20px;
@@ -178,21 +204,25 @@ body::-webkit-scrollbar {
     box-shadow: 1px 1px 5px grey;
 }
 
+/* the container of the side comments */
 .hero div ul li div {
     margin-left: 14px;
 }
 
+/* styling the first side comment */
 .hero div ul li h5 {
     margin: 5px;
     font-size: 18px;
 }
 
+/* styling the second side comment */
 .hero div ul li h6 {
     margin: 5px;
     font-size: 17px;
     font-weight: 100;
 }
 
+/* styling the icons */
 .hero div ul li i {
     padding: 20px;
     background-color: black;
@@ -200,6 +230,7 @@ body::-webkit-scrollbar {
     color: white;
 }
 
+/* styling the dollar icon separately because i struggled with it's padding due to it's "form" */
 #dollar {
     padding: 20px 25px 20px 25px;
 }
@@ -209,13 +240,15 @@ body::-webkit-scrollbar {
 
 
 
-/* section-2 */
+/*************************** the second section ***************************/
 
+/* the container of the second section */
 .section-2 {
     margin-top: 10px;
     display: flex;
 }
 
+/* the container of the first div */
 .section-2 .div-1 {
     margin-left: 13px;
     height: 230px;
@@ -224,24 +257,29 @@ body::-webkit-scrollbar {
     box-shadow: 1px 1px 5px grey;
 }
 
+/* the container of the div nested inside the first div */
 .section-2 .div-1 .div-1a {
     margin-left: 25px;
 }
 
-.section-2 .div-1 div div {
+/* the container of the inner div */
+.section-2 .div-1 .div-1a div {
     display: flex;
     margin-right: 20px;
 }
 
-.section-2 .div-1 div div h5:nth-child(1) {
-    margin-right: 190px;
-}
-
-.section-2 .div-1 div div h5 {
+/* the general styling of every h5 element in the inner div */
+.section-2 .div-1 .div-1a div h5 {
     font-size: 18px;
     color: white;
 }
 
+/* the margin of the first h5 tag in the inner div */
+.section-2 .div-1 div div h5:nth-child(1) {
+    margin-right: 190px;
+}
+
+/* the h2 element underneath the inner div */
 .section-2 .div-1 h2 {
     color: white;
     font-size: 60px;
@@ -249,6 +287,7 @@ body::-webkit-scrollbar {
     margin-bottom: 15px;
 }
 
+/* the h4 element outside .div-1a */
 .section-2 .div-1 h4 {
     margin-top: 30px;
     font-weight: 100;
@@ -260,55 +299,69 @@ body::-webkit-scrollbar {
     box-shadow: 1px 1px 5px grey;
 }
 
-/* trips and performance */
 
+/* the container of trips and performance */
 .div-2 {
-    padding-left: 10px;
-    padding-right: 20px;
+    padding: 20px;
+    width: 30%;
     background-color: white;
     box-shadow: 1px 1px 5px grey;
 }
 
-.div-2 table, .div-2 th, .div-2 td {
-    border: 1px hidden black;
-    border-collapse: collapse;
-}
-.div-2 th, .div-2 td {
-    padding: 10px;
-    padding-right: 90px;
-}
+/* the heading of the table */
 .div-2 div h2 {
     font-size: 20px;
+    margin: 9px 0px 17px 0px;
+    margin-left: 7px;
+    font-weight: 600;
 }
 
-/* input calendar */
-
-.div-3 {
-    width: 300px;
+/* the table */
+.div-2 table {
+    border: 1px hidden black;
+    border-collapse: collapse;
+    margin-left: 7px;
 }
-
-.div-3 input {
-    padding: 15px;
-    border: hidden;
+.div-2 td {
+    font-size: 13px;
+    padding: 10px;  
     margin-left: 20px;
-    box-shadow: 1px 1px 5px grey;
+}
+.div-2 tr {
+    border: 1px solid black;
+}
+/* styling of every first td */
+.div-2 .td-1 {
+    padding-right: 220px;
+}
+/* the two tds with red colored values */
+.div-2 .low{
+    color: red;
 }
 
 
-/* section-3 */
 
+
+
+/************** the third section (recent bookings and trip locations) ****************/
+
+/* the container of the section */
 .section-3 {
     display: flex;
 }
 
+/* the container of the first div */
 .section-3 .recent-div {
     padding: 20px;
     background-color: white;
     margin-top: 10px;
-    margin-right: 80px;
+    margin-right: 20px;
     box-shadow: 1px 1px 5px grey;
+    width: 70%;
+    height: 250px;
 }
 
+/* styles for the table */
 .section-3 div table, 
 .section-3 div th, 
 .section-3 div td 
@@ -317,39 +370,51 @@ body::-webkit-scrollbar {
     border-collapse: collapse;
 }
 
+/* a different background color for the second row */
 .section-3 div table .tr-2 {
     background-color: #F2F3F8;
 }
-.section-3 div th, 
+
+/* styling of the table elements */
 .section-3 div td 
 {
     padding: 10px;
-    padding-right: 50px;
+    padding-right: 90px;
+    font-size: 13px;
 }
 
-.section-3 .recent-div {
-    height: 250px;
+/* the second div(the second box) */
+
+/* the container of the second div */
+.section-3 .div-3b {
+    width: 30%;
+    margin-right: 20px;
 }
 
-
+/* the h4 element of the second div */
 .section-3 .div-3b h4 {
     margin: 0px;
     margin-top: 10px;
     margin-bottom: 1px;
-    padding: 5px;
+    padding: 15px;
     background-color: #F2F3F8;
     box-shadow: 1px 1px 5px grey;
 }
 
+/* the textarea of the second div */
 .section-3 .div-3b textarea {
     border: hidden;
     box-shadow: 1px 1px 5px grey;
+    width: 99%;
 }
 
+/* on focus attribute of the textarea */
 .section-3 .div-3b textarea:focus {
     outline: none;
 }
 
+
+/***************************************** footer *****************************************/
 .footer {
     text-align: center;
     margin-top: 10px;
@@ -358,58 +423,74 @@ body::-webkit-scrollbar {
     margin-right: 20px;
 }
 
-.body {
-    margin-top: 20px;
-}
 
 
 
 
-/* media queries */
+/************************************* media queries *************************************/
 
 @media (max-width: 376px) {
+    /* reset of the page's body */
     body {
         margin: 0px;
         padding: 0px;
     }
 
+    /* rearrangement of the navbar */
     .navigation-1 {
         flex-direction: column;
     }
 
+    /* rearrangement of th navbar's ul */
     .navigation-1 nav ul {
         flex-direction: column;
     }
 
+    /* reset of the margin of the searchbar's container */
     .navigation-1 nav ul li:nth-child(2) {
         margin: 0px;
     }
 
+    /* rest of the container of the first li (the li container "easyGo" and the hamburger menu) */
     .navigation-1 nav ul li:nth-child(1) {
         display: flex;
         justify-content: space-between;
     }
 
+    /* styling of the svgs */
     .navigation-1 nav ul li img {
         width: 20px;
         display: block;
         cursor: pointer;
     }
 
+    /* styling of the searchbar */
     .navigation-1 nav ul li input {
         padding-right: 160px;
         margin-left: 10px;
         margin-bottom: 3px;
     }
 
+    /* hiding th svgs */
     .navigation-1 div {
         display: none;
     }
 
+    /* .navigation-2 {
+        background-color: black;
+        padding: 0px;
+        margin: 0px;
+        padding-left: 0%;
+        padding-right: 45%;
+    } */
+
+    /* hiding the left navbar */
     .navigation-2 {
         display: none;
     }
 
+
+    /* reset of the rest of the body */
     .hero,
     .section-2,
     .section-3,
@@ -418,102 +499,116 @@ body::-webkit-scrollbar {
         margin: 0px;
     }
 
+    /* reset of the first section's container (the hero section) */
     .hero div ul {
         flex-direction: column;
         margin: 10px;
     }
 
-    .hero div ul li img {
-        margin-right: 30px;
-    }
-
+    /* reset of the second section's body (the next trip and trips and performance) */
     .section-2  {
         flex-direction: column;
         margin: 0px;
         padding: 0px;
     }
 
+    /* adding a margin of 10px to all the divs/containers in section-2 */
     .section-2 div {
         margin: 10px;
     }
 
+    /* container of the first div */
+    .section-2 .div-1 {
+        width: 94%;
+        margin-left: 10px;
+    }
+
+    /* resetting the container of the nested div */
     .section-2 .div-1 .div-1a {
         margin-left: 0px;
     }
     
-    .section-2 .div-1 div div {
+    /* resetting the container of the inner div */
+    .section-2 .div-1 .div-1a div {
         margin-right: 5px;
     }
     
-    .section-2 .div-1 div div h5:nth-child(1) {
-        margin-right: 170px;
-        margin-left: 5px;
-    }
-    
-    .section-2 .div-1 div div h5 {
+    /* resetting the h5 elements of the inner div */
+    .section-2 .div-1 .div-1a div h5 {
         font-size: 14px;
     }
 
+    /* resetting the first h5 element of the nested div */
+    .section-2 .div-1 .div-1a div h5:nth-child(1) {
+        margin-right: 150px;
+        margin-left: 5px;
+    }
+
+    /* the h2 element of the nested div */
     .section-2 .div-1 h2 {
         font-size: 50px;
         margin-top: 0px;
     }
 
-    /* div2 */
-
-    .div-2 div h2 {
-        font-size: 17px;
+    /* the h4 element of the first div */
+    .section-2 .div-1 h4 {
+        width: 89%;
     }
 
-    .div-2 th, .div-2 td {
+    /****** the second div ******/
+    /* the container of the first div */
+    .section-2 .div-2 {
+        width: 92%;
+        margin: 0px;
+        padding: 5px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    /* the heading of the table */
+    .div-2 div h2 {
+        font-size: 17px;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+
+    /* the table element */
+    .div-2 td {
         font-size: 12px;
         padding-right: 0px;
     }
 
-    .div-2 th, .div-2 .td-1 {
+    /* every first td of the table */
+    .div-2 .td-1 {
         padding-right: 170px;
     }
 
-    .div-2 table, .div-2 th, .div-2 td {
-        padding-bottom: 10px;
-        border-collapse: collapse;
-        border-bottom: 1px solid grey;
-        border-top: 1px solid grey;
-    }
 
-    #tr1 {
-        border-top: hidden;
-    }
 
-    /* input */
+    /* the third section (recent bookings and trip locations) */
 
-    .div-3 input {
-        margin-left: 100px;
-    }
-
-    /* section-3 */
-
+    /* the container of the third section */
     .section-3 {
+        margin-top: 20px;
         flex-direction: column;
     }
 
+    /* the container of the table and heading */
     .section-3 .recent-div {
         margin: 0px;
         padding: 0px;
         margin-left: 10px;
-        margin-right: 10px;
-
+        width: 95%;
     }
 
+    /* the heading of the table */
     .section-3 .recent-div h2 {
         padding: 5px;
         margin-left: 5px;
     }
 
-    .section-3 div table, 
-    .section-3 div th, 
-    .section-3 div td 
-    {
+    /* the table"s element */
+    .section-3 div td {
         border: 1px hidden black;
         border-collapse: collapse;
         font-size: 13px;
@@ -521,6 +616,7 @@ body::-webkit-scrollbar {
         color: grey;
     }
 
+    /* the first row of the table */
     .section-3 .recent-div table tr:nth-child(1) {
         font-weight: 900;
     }
@@ -528,20 +624,21 @@ body::-webkit-scrollbar {
 
     /* trip locations */
 
-    .div-3b {
+    /* the container of the second div */
+    .section-3 .div-3b {
         margin-left: 10px;
-        margin-right: 10px;
+        width: 95%;
     }
 
+    /* the textarea */
     .div-3b textarea {
         width: 352px;
     }
 
-    /* footer */
+    /* the footer */
 
     .footer {
-        margin-top: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin: 10px;
+        font-size: 11px;
     }
 }
